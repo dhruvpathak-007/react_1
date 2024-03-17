@@ -1,8 +1,8 @@
 // eslint-disable-next-line react/prop-types
 import styles from "./Item.module.css";
-function Items({ ite, handleBuy }) {
+function Items({ ite, bought, handleBuy }) {
   return (
-    <li className="list-group-item">
+    <li className={`list-group-item ${bought && "active"}`}>
       {ite}
       <button
         className={`${styles.button} btn btn-info`}
