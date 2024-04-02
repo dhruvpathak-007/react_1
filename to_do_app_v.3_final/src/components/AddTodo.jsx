@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
+import { MdAddCard } from "react-icons/md";
 
 function AddTodo({ handler }) {
   const [newToDoItem, setNewToDoItem] = useState({ name: "", date: "" });
@@ -37,7 +38,7 @@ function AddTodo({ handler }) {
             className="btn btn-success"
             onClick={newHandler}
           >
-            Success
+            <MdAddCard />
           </button>
         </div>
       </div>

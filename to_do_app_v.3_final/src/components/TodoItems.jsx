@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { RiDeleteBin6Line } from "react-icons/ri";
 function TodoItems({ value, deleteHandler }) {
   return (
     <div className="container">
@@ -11,7 +12,7 @@ function TodoItems({ value, deleteHandler }) {
             className="btn btn-danger my-button"
             onClick={() => deleteHandler(value.name)}
           >
-            Delete
+            <RiDeleteBin6Line />
           </button>
         </div>
       </div>
